@@ -1,10 +1,12 @@
 import './App.css'
 import './boxicons.min.css'
 
+import Navigation from './Components/Navigation/Navigation'
+
 function App() {
 	return (
 		<div className="App">
-			Hello <i class="bx bxl-mongodb"></i>
+			<Navigation />
 		</div>
 	)
 }
