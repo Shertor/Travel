@@ -26,7 +26,7 @@ export default function Navigation() {
 	function wrapperClick(event) {
 		// console.log(event.target, event.currentTarget)
 		if (event.target === event.currentTarget) {
-			// closeNav()
+			closeNav()
 		}
 	}
 
@@ -34,14 +34,7 @@ export default function Navigation() {
 		<>
 			<header className="header">
 				{toggleNav ? (
-					<div
-						className="nav__menu__wrapper"
-						onClick={(event) => {
-							if (event.currentTarget === event.target) {
-								closeNav()
-							}
-						}}
-					></div>
+					<div className="nav__menu__wrapper" onClick={wrapperClick}></div>
 				) : null}
 
 				<nav className="nav bd-container">
