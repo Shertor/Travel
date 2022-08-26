@@ -1,8 +1,8 @@
 {
-	"short_name": ".",
+	"short_name": "Travel",
 	"name": "Shertor Travel Blog",
-	"start_url": ".",
+	"start_url": "/",
 	"display": "standalone",
-	"theme_color": "#000000",
-	"background_color": "#ffffff"
+	"theme_color": "#ecf3f2",
+	"background_color": "#ecf3f2"
 }
