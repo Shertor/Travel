@@ -5,6 +5,7 @@ import { HashLink } from 'react-router-hash-link'
 import './Navigation.css'
 
 import Home from '../Home/Home'
+import Explore from '../Explore/Explore'
 // import NotFound from '../NotFound/NotFound'
 
 export default function Navigation() {
@@ -72,8 +73,10 @@ export default function Navigation() {
 			</header>
 
 			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/Travel" element={<Home />} />
+				<Route exact path="/" element={<Home />} />
+				<Route path="/Explore" element={<Explore />} />
+				<Route path="/Destinations" element={<Home />} />
+				<Route path="/Hotels" element={<Home />} />
 
 				{/* 404 Page */}
 				{/* <Route path="*" element={<NotFound />} /> */}
