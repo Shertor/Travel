@@ -17,11 +17,11 @@ export default function Navigation() {
 		setToggleNav(true)
 	}
 
-	// function closeNav() {
-	// 	const body = document.getElementById('body')
-	// 	body.classList.remove('body-hidden')
-	// 	setToggleNav(false)
-	// }
+	function closeNav() {
+		// const body = document.getElementById('body')
+		// body.classList.remove('body-hidden')
+		setToggleNav(false)
+	}
 
 	function wrapperClick(event) {
 		// console.log(event.target, event.currentTarget)
@@ -33,6 +33,17 @@ export default function Navigation() {
 	return (
 		<>
 			<header className="header">
+				{toggleNav ? (
+					<div
+						className="nav__menu__wrapper"
+						onClick={(event) => {
+							if (event.currentTarget === event.target) {
+								closeNav()
+							}
+						}}
+					></div>
+				) : null}
+
 				<nav className="nav bd-container">
 					<a href="#" className="nav__logo">
 						Travel
@@ -44,22 +55,26 @@ export default function Navigation() {
 					>
 						<ul className="nav__list">
 							<li className="nav__item">
-								<NavLink to="/" className="nav__link">
+								<NavLink to="/" className="nav__link" onClick={closeNav}>
 									Home
 								</NavLink>
 							</li>
 							<li className="nav__item">
-								<NavLink to="/Explore" className="nav__link">
+								<NavLink to="/Explore" className="nav__link" onClick={closeNav}>
 									Explore
 								</NavLink>
 							</li>
 							<li className="nav__item">
-								<NavLink to="/Destinations" className="nav__link">
+								<NavLink
+									to="/Destinations"
+									className="nav__link"
+									onClick={closeNav}
+								>
 									Destinations
 								</NavLink>
 							</li>
 							<li className="nav__item">
-								<NavLink to="/Hotels" className="nav__link">
+								<NavLink to="/Hotels" className="nav__link" onClick={closeNav}>
 									Hotels
 								</NavLink>
 							</li>

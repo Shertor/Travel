@@ -30,6 +30,16 @@
 		border-radius: 1rem;
 		transition: 0.4s;
 	}
+
+	.nav__menu__wrapper {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+
+		width: 100%;
+		height: 100vh;
+		height: var(--app-height);
+	}
 }
 
 .nav__logo,
