@@ -59,6 +59,8 @@
 .nav__logo,
 .nav__toggle {
 	color: var(--title-color);
+	display: inline-flex;
+	align-items: center;
 }
 
 .nav__link {
@@ -71,7 +73,7 @@
 }
 
 .nav__toggle {
-	font-size: 1.2rem;
+	font-size: 1.25rem;
 	cursor: pointer;
 }
 
