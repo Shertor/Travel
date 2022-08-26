@@ -1,5 +1,10 @@
+:root {
+	--controls-image-size: 35px;
+	--controls-image-active-size: 45px;
+}
+
 .trips {
-	height: 100vh;
+	height: 100vh !important;
 	position: relative;
 }
 
@@ -59,4 +64,72 @@
 .trips__button-icon {
 	font-size: 1.5rem;
 	margin-left: 0.5rem;
+}
+
+.controls__img {
+	width: var(--controls-image-size) !important;
+	height: var(--controls-image-size) !important;
+	max-width: var(--controls-image-size) !important;
+	min-width: var(--controls-image-size) !important;
+
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.controls__img-container {
+	width: fit-content;
+	height: fit-content;
+}
+
+.controls {
+	position: absolute;
+	bottom: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+
+	padding: 0.25rem 0.5rem;
+	border-radius: 0.75rem;
+	background-color: var(--first-color-lighter);
+	z-index: var(--z-tooltip);
+	overflow: hidden;
+}
+
+.controls__container {
+	display: flex;
+
+	align-items: center;
+	column-gap: 1rem;
+}
+
+.controls__container .swiper-wrapper {
+	width: fit-content;
+	height: fit-content;
+
+	column-gap: 8px;
+
+	align-items: center !important;
+}
+
+.controls__container .swiper-wrapper .swiper-slide {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.controls__container
+	.swiper-wrapper
+	.swiper-slide:not(.swiper-slide-thumb-active) {
+	width: var(--controls-image-size) !important;
+	height: var(--controls-image-size) !important;
+}
+
+.swiper-slide-thumb-active {
+	width: var(--controls-image-active-size) !important;
+	height: var(--controls-image-active-size) !important;
+}
+
+.swiper-slide-thumb-active .controls__img {
+	width: var(--controls-image-active-size) !important;
+	height: var(--controls-image-active-size) !important;
+	max-width: var(--controls-image-active-size) !important;
+	min-width: var(--controls-image-active-size) !important;
 }

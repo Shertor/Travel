@@ -73,6 +73,7 @@ export default function Navigation() {
 
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/Travel" element={<Home />} />
 
 				{/* 404 Page */}
 				{/* <Route path="*" element={<NotFound />} /> */}
