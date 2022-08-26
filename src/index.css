@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
+	--app-height: 100%;
+
 	--header-height: 3rem;
 
 	--first-color: #26a69a;
@@ -34,6 +36,11 @@
 ::before,
 ::after {
 	box-sizing: border-box;
+}
+
+html,
+body {
+	height: fit-content;
 }
 
 body {
