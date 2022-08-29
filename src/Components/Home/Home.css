@@ -85,11 +85,6 @@
 	cursor: pointer;
 }
 
-.controls__img-container {
-	width: fit-content;
-	height: fit-content;
-}
-
 .controls {
 	position: absolute;
 	bottom: 2rem;

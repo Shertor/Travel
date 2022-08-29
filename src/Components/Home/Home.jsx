@@ -1,4 +1,6 @@
 import React, { useRef, useState } from 'react'
+
+import gsap from "gsap";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -19,6 +21,13 @@ import { EffectFade, Navigation, Thumbs } from 'swiper'
 
 export default function Home() {
 	const [thumbsSwiper, setThumbsSwiper] = useState(null)
+
+	function scrollAnimation() {
+		gsap.from('.trips__subtitle', {opacity: 0, duration: .2, delay: .2, y: -20})
+		gsap.from('.trips__title', {opacity: 0, duration: .3, delay: .3, y: -20})
+		gsap.from('.trips__description', {opacity: 0, duration: .4, delay: .4, y: -20})
+		gsap.from('.trips__button', {opacity: 0, duration: .5, delay: .5, y: -20})
+	}
 
 	return (
 		<>
@@ -92,10 +101,10 @@ export default function Home() {
 						className="controls__container"
 						modules={[Navigation, Thumbs]}
 					>
-						<SwiperSlide className="controls__img-container">
+						<SwiperSlide onClick={scrollAnimation}>
 							<img src={turkey_2020} alt="" className="controls__img" />
 						</SwiperSlide>
-						<SwiperSlide>
+						<SwiperSlide onClick={scrollAnimation}>
 							<img src={turkey_2018} alt="" className="controls__img" />
 						</SwiperSlide>
 					</Swiper>
