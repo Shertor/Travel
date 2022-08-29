@@ -32,11 +32,10 @@ export default function Navigation() {
 
 	return (
 		<>
-			<header className="header">
+			<header className="header ">
 				{toggleNav ? (
 					<div className="nav__menu-closer" onClick={wrapperClick}></div>
 				) : null}
-
 				<div className="header__blur"></div>
 
 				<nav className="nav bd-container">

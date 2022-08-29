@@ -1,6 +1,10 @@
+:root {
+	--blur-header-margin: 0.4rem;
+}
+
 .header {
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 0.5rem;
 	left: 0;
 	z-index: var(--z-fixed);
@@ -8,11 +12,16 @@
 
 .header__blur {
 	position: absolute;
+	top: 0;
+	left: 0;
 
-	width: 100%;
+	margin: 0 var(--blur-header-margin);
+	box-sizing: content-box;
+
+	width: calc(100% - calc(2 * var(--blur-header-margin)));
 	height: 100%;
 
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 
 	background-color: var(--first-color-lighter);
 	opacity: 0.6;
