@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 
-import gsap from "gsap";
+import gsap from 'gsap'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -25,12 +25,35 @@ export default function Home() {
 
 	function scrollAnimation() {
 		if (!isAnimated) {
-			gsap.from('.trips__subtitle', {opacity: 0, duration: .2, delay: .2, y: -20})
-			gsap.from('.trips__title', {opacity: 0, duration: .3, delay: .3, y: -20})
-			gsap.from('.trips__description', {opacity: 0, duration: .4, delay: .4, y: -20})
-			gsap.from('.trips__button', {opacity: 0, duration: .5, delay: .5, y: -20})
+			setIsAnimated(true)
+			setTimeout(() => {
+				setIsAnimated(false)
+			}, 1000)
+			gsap.from('.trips__subtitle', {
+				opacity: 0,
+				duration: 0.2,
+				delay: 0.2,
+				y: -20,
+			})
+			gsap.from('.trips__title', {
+				opacity: 0,
+				duration: 0.3,
+				delay: 0.3,
+				y: -20,
+			})
+			gsap.from('.trips__description', {
+				opacity: 0,
+				duration: 0.4,
+				delay: 0.4,
+				y: -20,
+			})
+			gsap.from('.trips__button', {
+				opacity: 0,
+				duration: 0.5,
+				delay: 0.5,
+				y: -20,
+			})
 		}
-
 	}
 
 	return (
@@ -73,9 +96,9 @@ export default function Home() {
 						<div className="trips__container bd-container">
 							<div className="trips__data">
 								<h2 className="trips__subtitle">Trips</h2>
-								<h1 className="trips__title">Istanbul 2018</h1>
+								<h1 className="trips__title">İstanbul 2018</h1>
 								<p className="trips__description">
-									Istanbul is the largest city in Turkey, serving as the
+									İstanbul is the largest city in Turkey, serving as the
 									country's economic, cultural and historic hub. The city
 									straddles the Bosporus strait, lying in both Europe and Asia,
 									and has a population of over 15 million residents, comprising

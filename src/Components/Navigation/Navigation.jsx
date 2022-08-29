@@ -40,46 +40,54 @@ export default function Navigation() {
 				<nav className="nav bd-container">
 					<div className="header__blur"></div>
 					<div className="nav__content">
-					<a href="#" className="nav__logo">
-						Travel
-					</a>
+						<a href="#" className="nav__logo">
+							Travel
+						</a>
 
-					<div
-						className={toggleNav ? 'nav__menu show-menu' : 'nav__menu'}
-						id="nav-menu"
-					>
-						<ul className="nav__list">
-							<li className="nav__item">
-								<NavLink to="/" className="nav__link" onClick={closeNav}>
-									Home
-								</NavLink>
-							</li>
-							<li className="nav__item">
-								<NavLink to="/Explore" className="nav__link" onClick={closeNav}>
-									Explore
-								</NavLink>
-							</li>
-							<li className="nav__item">
-								<NavLink
-									to="/Destinations"
-									className="nav__link"
-									onClick={closeNav}
-								>
-									Destinations
-								</NavLink>
-							</li>
-							<li className="nav__item">
-								<NavLink to="/Hotels" className="nav__link" onClick={closeNav}>
-									Hotels
-								</NavLink>
-							</li>
-						</ul>
+						<div
+							className={toggleNav ? 'nav__menu show-menu' : 'nav__menu'}
+							id="nav-menu"
+						>
+							<ul className="nav__list">
+								<li className="nav__item">
+									<NavLink to="/" className="nav__link" onClick={closeNav}>
+										Home
+									</NavLink>
+								</li>
+								<li className="nav__item">
+									<NavLink
+										to="/Explore"
+										className="nav__link"
+										onClick={closeNav}
+									>
+										Explore
+									</NavLink>
+								</li>
+								<li className="nav__item">
+									<NavLink
+										to="/Destinations"
+										className="nav__link"
+										onClick={closeNav}
+									>
+										Destinations
+									</NavLink>
+								</li>
+								<li className="nav__item">
+									<NavLink
+										to="/Hotels"
+										className="nav__link"
+										onClick={closeNav}
+									>
+										Hotels
+									</NavLink>
+								</li>
+							</ul>
+						</div>
+
+						<div className="nav__toggle" id="nav-toggle" onClick={openNav}>
+							<i className="bx bx-menu"></i>
+						</div>
 					</div>
-
-					<div className="nav__toggle" id="nav-toggle" onClick={openNav}>
-						<i className="bx bx-menu"></i>
-					</div></div>
-
 				</nav>
 			</header>
 
