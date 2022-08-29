@@ -1,0 +1,14 @@
+.explore {
+	min-height: 100vh;
+	min-height: var(--app-height);
+
+	padding-top: calc(var(--header-height) + 2.5rem);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.explore__title {
+	font-size: calc(var(--biggest-font-size));
+}

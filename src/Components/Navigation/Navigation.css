@@ -21,14 +21,16 @@
 	border-radius: 0.5rem;
 
 	background-color: var(--first-color-lighter);
-	opacity: 0.2;
+	opacity: 0.8;
+
+	box-shadow: 1px 1px 4px var(--shadow), -1px -1px 4px var(--shadow);
 }
 
 .nav {
 	position: relative;
 
-	-webkit-backdrop-filter: blur(20px);
-	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(40px);
+	backdrop-filter: blur(40px);
 
 	padding: 0rem 1rem;
 	border-radius: 0.5rem;
@@ -111,9 +113,9 @@
 		margin-bottom: 0;
 	}
 
-	/* .nav__link{
-		color: var(--first-color-lighter);
-	} */
+	.nav__link {
+		color: var(--title-color);
+	}
 
 	.nav__toggle {
 		display: none;
