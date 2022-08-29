@@ -137,3 +137,46 @@
 	max-width: var(--controls-image-active-size) !important;
 	min-width: var(--controls-image-active-size) !important;
 }
+
+
+@media screen and (max-width: 320px) {
+	.controls__container {
+		column-gap: .25rem;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.trips__container {
+		grid-template-columns: 2.0fr 1.0fr;
+	}
+
+	.trips__description {
+		padding-right: 5rem;
+		margin-bottom: 2rem;
+	}
+
+	.controls{
+		padding: .5rem;
+		border-radius: 1.25rem;
+	}
+
+	.controls__container{
+		column-gap: 1.5rem;
+	}
+
+	.controls__img{
+		border-radius: .75rem;
+	}
+
+	:root {
+		--controls-image-size: 45px;
+		--controls-image-active-size: 55px;
+	}
+}
+
+
+@media screen and (min-width: 1024px) {
+	.trips__description{
+		padding-right: 11rem;
+	}
+}

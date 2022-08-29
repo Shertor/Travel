@@ -36,9 +36,10 @@ export default function Navigation() {
 				{toggleNav ? (
 					<div className="nav__menu-closer" onClick={wrapperClick}></div>
 				) : null}
-				<div className="header__blur"></div>
 
 				<nav className="nav bd-container">
+					<div className="header__blur"></div>
+					<div className="nav__content">
 					<a href="#" className="nav__logo">
 						Travel
 					</a>
@@ -77,7 +78,8 @@ export default function Navigation() {
 
 					<div className="nav__toggle" id="nav-toggle" onClick={openNav}>
 						<i className="bx bx-menu"></i>
-					</div>
+					</div></div>
+
 				</nav>
 			</header>
 
