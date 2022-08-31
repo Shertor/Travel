@@ -23,6 +23,8 @@
 
 	--z-tooltip: 10;
 	--z-fixed: 100;
+
+	--app-max-width: 1024px;
 }
 
 @media screen and (min-width: 1024px) {

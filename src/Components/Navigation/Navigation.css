@@ -4,7 +4,8 @@
 
 .header {
 	width: 100%;
-	position: absolute;
+	position: fixed;
+	will-change: transform;
 	top: 0.5rem;
 	left: 0;
 	z-index: var(--z-fixed);
@@ -39,7 +40,7 @@
 .nav__content {
 	position: relative;
 
-	max-width: 968px;
+	max-width: var(--app-max-width);
 	height: var(--header-height);
 	display: flex;
 	justify-content: space-between;

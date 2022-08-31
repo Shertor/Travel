@@ -11,4 +11,5 @@
 
 .explore__title {
 	font-size: calc(var(--biggest-font-size));
+	color: var(--title-color);
 }
