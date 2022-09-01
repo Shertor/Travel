@@ -20,7 +20,7 @@ export default function Footer() {
 								rel="noreferrer"
 								className="site-info__contacts-item"
 							>
-								<i class="bx bxl-github"></i>
+								<i className="bx bxl-github"></i>
 							</a>
 						</div>
 					</div>
