@@ -7,6 +7,7 @@ import TripCard from '../TripCard/TripCard'
 
 import turkey_2018 from '../Home/imgs/turkey_2018.jpg'
 import turkey_2021 from '../Home/imgs/turkey_2021.jpg'
+import turkey_2022 from '../Home/imgs/turkey_2022.jpg'
 
 export default function Explore() {
 	return (
@@ -16,6 +17,7 @@ export default function Explore() {
 				<h3 className="explore__subtitle">Trips</h3>
 				<Divider />
 				<TripCard
+					img={turkey_2022}
 					title="Kemer"
 					subtitle="2022"
 					description="Kemer is a seaside resort and district of Antalya Province 

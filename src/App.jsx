@@ -4,6 +4,7 @@ import './boxicons.min.css'
 
 import Navigation from './Components/Navigation/Navigation'
 import Footer from './Components/Footer/Footer'
+import IsMobile from './Utils/IsMobile'
 
 function App() {
 	const appHeight = () => {
@@ -12,7 +13,9 @@ function App() {
 	}
 
 	useEffect(() => {
-		window.addEventListener('resize', appHeight)
+		if (!IsMobile()) {
+			window.addEventListener('resize', appHeight)
+		}
 		appHeight()
 	}, [])
 

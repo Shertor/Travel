@@ -18,6 +18,7 @@ import './Home.css'
 
 import turkey_2018 from './imgs/turkey_2018.jpg'
 import turkey_2021 from './imgs/turkey_2021.jpg'
+import turkey_2022 from './imgs/turkey_2022.jpg'
 
 import { EffectFade, Navigation, Thumbs } from 'swiper'
 
@@ -52,7 +53,7 @@ export default function Home() {
 	const [thumbsSwiper, setThumbsSwiper] = useState(null)
 	const [isAnimated, setIsAnimated] = useState(false)
 
-	useEffect(()=>{
+	useEffect(() => {
 		animate()
 	}, [])
 
@@ -75,6 +76,32 @@ export default function Home() {
 					thumbs={{ swiper: thumbsSwiper }}
 					modules={[EffectFade, Navigation, Thumbs]}
 				>
+					<SwiperSlide className="trips">
+						<img src={turkey_2022} alt="" className="trips__bg" />
+
+						<div className="trips__container bd-container">
+							<div className="trips__data">
+								<h2 className="trips__subtitle">Trips</h2>
+								<h1 className="trips__title">Kemer 2022</h1>
+								<p className="trips__description">
+									Kemer is a seaside resort and district of Antalya Province on
+									the Mediterranean coast of Turkey, 43 km (27 mi) west of the
+									city of Antalya, on the Turkish Riviera.
+								</p>
+								<NavLink to="/Explore" className="trips__button">
+									Explore{' '}
+									<i className="bx bx-right-arrow-alt trips__button-icon"></i>
+								</NavLink>
+							</div>
+
+							<div className="trips__trip">
+								<div className="trip__wrapper">
+									<div className="trip__content"></div>
+								</div>
+							</div>
+						</div>
+					</SwiperSlide>
+
 					<SwiperSlide className="trips">
 						<img src={turkey_2021} alt="" className="trips__bg" />
 
@@ -139,6 +166,9 @@ export default function Home() {
 						className="controls__container"
 						modules={[Navigation, Thumbs]}
 					>
+						<SwiperSlide onClick={scrollAnimation}>
+							<img src={turkey_2022} alt="" className="controls__img" />
+						</SwiperSlide>
 						<SwiperSlide onClick={scrollAnimation}>
 							<img src={turkey_2021} alt="" className="controls__img" />
 						</SwiperSlide>

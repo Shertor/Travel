@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Routes, Route, NavLink } from 'react-router-dom'
-import ScrollToTop from '../../ScrollToTop/ScrollToTop'
+import ScrollToTop from '../../Utils/ScrollToTop'
 // import { HashLink } from 'react-router-hash-link'
 
 import './Navigation.css'
