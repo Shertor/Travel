@@ -10,7 +10,7 @@ export default function Footer() {
 			<div className="footer__wrapper ">
 				<footer className="footer bd-container">
 					<div className="footer__site-info">
-						<div className="site-info__title">TRAVEL</div>
+						<div className="site-info__title">ABOUT</div>
 						<div className="site-info__subtile">Travel Vebsite Project</div>
 						<div className="site-info__copy">by Shertor</div>
 						<div className="site-info__contacts">
@@ -25,7 +25,7 @@ export default function Footer() {
 						</div>
 					</div>
 					<div className="footer__site-nav">
-						<div className="site-info__title">ABOUT</div>
+						<div className="site-info__title">TRAVEL WITH US</div>
 						<NavLink to="/" className="site-nav__item">
 							Home
 						</NavLink>
