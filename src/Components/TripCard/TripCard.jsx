@@ -21,8 +21,9 @@ export default function TripCard({img, title, subtitle, description, link}) {
 							{description}
 						</div>
 					</div>
-					<div className="tripcard__actions-section"><button className="btn btn_contained">READ ARTICLE</button></div>
+					{/* <div className="tripcard__actions-section"><button className="btn btn_contained">READ ARTICLE</button></div> */}
 				</div>
+                <a href='#' className="tripcard__link"></a>
 			</div>
 		</>
 	)
