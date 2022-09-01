@@ -62,6 +62,8 @@
 		background-color: var(--first-color-lighter);
 		border-radius: 1rem;
 		transition: top 0.4s;
+
+		box-shadow: 1px 1px 4px var(--shadow), -1px -1px 4px var(--shadow);
 	}
 
 	.nav__menu-closer {

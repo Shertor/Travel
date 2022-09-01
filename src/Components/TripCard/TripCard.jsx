@@ -29,7 +29,7 @@ function TripCard({ img, title, subtitle, description, link }) {
 }
 
 TripCard.propTypes = {
-	img: PropTypes.object,
+	img: PropTypes.string,
 	title: PropTypes.string.isRequired,
 	subtitle: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
