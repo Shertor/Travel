@@ -1,8 +1,13 @@
 {
   "files": {
-    "main.css": "/Travel/static/css/main.c8b63039.css",
-    "main.js": "/Travel/static/js/main.877144a6.js",
+    "main.css": "/Travel/static/css/main.9d3bfd33.css",
+    "main.js": "/Travel/static/js/main.9f0cd5e8.js",
+    "static/css/750.0c7e2754.chunk.css": "/Travel/static/css/750.0c7e2754.chunk.css",
+    "static/js/750.361d5a8c.chunk.js": "/Travel/static/js/750.361d5a8c.chunk.js",
+    "static/css/933.7c58d73a.chunk.css": "/Travel/static/css/933.7c58d73a.chunk.css",
+    "static/js/933.d1bf795d.chunk.js": "/Travel/static/js/933.d1bf795d.chunk.js",
     "static/js/787.8a220983.chunk.js": "/Travel/static/js/787.8a220983.chunk.js",
+    "static/js/646.b2268c8e.chunk.js": "/Travel/static/js/646.b2268c8e.chunk.js",
     "static/media/boxicons.svg": "/Travel/static/media/boxicons.0153fb5e5b5f697b4bcc.svg",
     "static/media/turkey_2018.jpg": "/Travel/static/media/turkey_2018.2ae9e7854cf8f072b38d.jpg",
     "static/media/turkey_2022.jpg": "/Travel/static/media/turkey_2022.f41b0de1255906827006.jpg",
@@ -13,12 +18,17 @@
     "static/media/boxicons.woff2": "/Travel/static/media/boxicons.0335b427967c56248ea6.woff2",
     "static/media/stock.jpg": "/Travel/static/media/stock.e97ca749516c724e2bf7.jpg",
     "index.html": "/Travel/index.html",
-    "main.c8b63039.css.map": "/Travel/static/css/main.c8b63039.css.map",
-    "main.877144a6.js.map": "/Travel/static/js/main.877144a6.js.map",
-    "787.8a220983.chunk.js.map": "/Travel/static/js/787.8a220983.chunk.js.map"
+    "main.9d3bfd33.css.map": "/Travel/static/css/main.9d3bfd33.css.map",
+    "main.9f0cd5e8.js.map": "/Travel/static/js/main.9f0cd5e8.js.map",
+    "750.0c7e2754.chunk.css.map": "/Travel/static/css/750.0c7e2754.chunk.css.map",
+    "750.361d5a8c.chunk.js.map": "/Travel/static/js/750.361d5a8c.chunk.js.map",
+    "933.7c58d73a.chunk.css.map": "/Travel/static/css/933.7c58d73a.chunk.css.map",
+    "933.d1bf795d.chunk.js.map": "/Travel/static/js/933.d1bf795d.chunk.js.map",
+    "787.8a220983.chunk.js.map": "/Travel/static/js/787.8a220983.chunk.js.map",
+    "646.b2268c8e.chunk.js.map": "/Travel/static/js/646.b2268c8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8b63039.css",
-    "static/js/main.877144a6.js"
+    "static/css/main.9d3bfd33.css",
+    "static/js/main.9f0cd5e8.js"
   ]
 }
