@@ -4,6 +4,7 @@
 }
 
 .home {
+	position: relative;
 	height: 100vh;
 	height: var(--app-height);
 }
@@ -87,9 +88,11 @@
 
 .controls {
 	position: absolute;
-	bottom: 2rem;
+
+	top: calc(100% - 2rem);
+
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translate(-50%, -100%);
 
 	padding: 0.25rem 0.5rem;
 	border-radius: 0.75rem;

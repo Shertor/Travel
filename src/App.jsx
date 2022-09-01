@@ -3,6 +3,7 @@ import './App.css'
 import './boxicons.min.css'
 
 import Navigation from './Components/Navigation/Navigation'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 	const appHeight = () => {
@@ -18,6 +19,7 @@ function App() {
 	return (
 		<div className="App">
 			<Navigation />
+			<Footer />
 		</div>
 	)
 }

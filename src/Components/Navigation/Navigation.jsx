@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Routes, Route, NavLink } from 'react-router-dom'
+import ScrollToTop from '../../ScrollToTop/ScrollToTop'
 // import { HashLink } from 'react-router-hash-link'
 
 import './Navigation.css'
@@ -64,22 +65,20 @@ export default function Navigation() {
 									</NavLink>
 								</li>
 								<li className="nav__item">
-									<NavLink
+									<div
 										to="/Destinations"
 										className="nav__link"
 										onClick={closeNav}
 									>
 										Destinations
-									</NavLink>
+										<span className="coming-soon__info">soon!</span>
+									</div>
 								</li>
 								<li className="nav__item">
-									<NavLink
-										to="/Hotels"
-										className="nav__link"
-										onClick={closeNav}
-									>
+									<div to="/Hotels" className="nav__link" onClick={closeNav}>
 										Hotels
-									</NavLink>
+										<span className="coming-soon__info">soon!</span>
+									</div>
 								</li>
 							</ul>
 						</div>
@@ -90,16 +89,17 @@ export default function Navigation() {
 					</div>
 				</nav>
 			</header>
+			<ScrollToTop>
+				<Routes>
+					<Route exact path="/" element={<Home />} />
+					<Route path="/Explore" element={<Explore />} />
+					<Route path="/Destinations" element={<Home />} />
+					<Route path="/Hotels" element={<Home />} />
 
-			<Routes>
-				<Route exact path="/" element={<Home />} />
-				<Route path="/Explore" element={<Explore />} />
-				<Route path="/Destinations" element={<Home />} />
-				<Route path="/Hotels" element={<Home />} />
-
-				{/* 404 Page */}
-				{/* <Route path="*" element={<NotFound />} /> */}
-			</Routes>
+					{/* 404 Page */}
+					{/* <Route path="*" element={<NotFound />} /> */}
+				</Routes>
+			</ScrollToTop>
 		</>
 	)
 }
