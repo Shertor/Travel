@@ -16,11 +16,13 @@ import 'swiper/css/thumbs'
 
 import './Home.css'
 
+import { EffectFade, Navigation, Thumbs } from 'swiper'
+
+import IsMobile from '../../Utils/IsMobile'
+
 import turkey_2018 from './imgs/turkey_2018.jpg'
 import turkey_2021 from './imgs/turkey_2021.jpg'
 import turkey_2022 from './imgs/turkey_2022.jpg'
-
-import { EffectFade, Navigation, Thumbs } from 'swiper'
 
 function animate() {
 	gsap.from('.trips__subtitle', {
@@ -53,8 +55,18 @@ export default function Home() {
 	const [thumbsSwiper, setThumbsSwiper] = useState(null)
 	const [isAnimated, setIsAnimated] = useState(false)
 
+	const appHeight = () => {
+		const doc = document.documentElement
+		doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+	}
+
 	useEffect(() => {
 		animate()
+
+		if (!IsMobile()) {
+			window.addEventListener('resize', appHeight)
+		}
+		appHeight()
 	}, [])
 
 	function scrollAnimation() {
