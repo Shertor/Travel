@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Travel/static/css/main.51272116.css",
-    "main.js": "/Travel/static/js/main.fa5acd82.js",
+    "main.css": "/Travel/static/css/main.ccc2f160.css",
+    "main.js": "/Travel/static/js/main.977caf3f.js",
     "static/js/787.8a220983.chunk.js": "/Travel/static/js/787.8a220983.chunk.js",
     "static/media/boxicons.svg": "/Travel/static/media/boxicons.0153fb5e5b5f697b4bcc.svg",
     "static/media/turkey_2018.jpg": "/Travel/static/media/turkey_2018.29bbb241e08c5cf33607.jpg",
@@ -11,12 +11,12 @@
     "static/media/boxicons.ttf": "/Travel/static/media/boxicons.ad0ddae357213656b3e6.ttf",
     "static/media/boxicons.woff2": "/Travel/static/media/boxicons.0335b427967c56248ea6.woff2",
     "index.html": "/Travel/index.html",
-    "main.51272116.css.map": "/Travel/static/css/main.51272116.css.map",
-    "main.fa5acd82.js.map": "/Travel/static/js/main.fa5acd82.js.map",
+    "main.ccc2f160.css.map": "/Travel/static/css/main.ccc2f160.css.map",
+    "main.977caf3f.js.map": "/Travel/static/js/main.977caf3f.js.map",
     "787.8a220983.chunk.js.map": "/Travel/static/js/787.8a220983.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51272116.css",
-    "static/js/main.fa5acd82.js"
+    "static/css/main.ccc2f160.css",
+    "static/js/main.977caf3f.js"
   ]
 }
