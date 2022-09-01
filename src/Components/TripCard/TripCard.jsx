@@ -1,15 +1,17 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { NavLink } from 'react-router-dom'
 
 import './TripCard.css'
 
-import test from '../Home/imgs/turkey_2020.jpg'
+import stock from './stock.jpg'
 
-export default function TripCard({img, title, subtitle, description, link}) {
+function TripCard({ img, title, subtitle, description, link }) {
 	return (
 		<>
-			<div className="tripcard__wrapper">
+			<NavLink to={link?link:"#"} className="tripcard__wrapper">
 				<div className="tripcard__media">
-					<img src={img} alt="" className="tripcard__img" />
+					<img src={img ? img : stock} alt="trip" className="tripcard__img" />
 				</div>
 				<div className="tripcard__content">
 					<div className="tripcard__title-section">
@@ -17,14 +19,21 @@ export default function TripCard({img, title, subtitle, description, link}) {
 						<div className="tripcard__subtitle">{subtitle}</div>
 					</div>
 					<div className="tripcard__text-section">
-						<div className="tripcard__text">
-							{description}
-						</div>
+						<div className="tripcard__text">{description}</div>
 					</div>
 					{/* <div className="tripcard__actions-section"><button className="btn btn_contained">READ ARTICLE</button></div> */}
 				</div>
-                <a href='#' className="tripcard__link"></a>
-			</div>
+			</NavLink>
 		</>
 	)
 }
+
+TripCard.propTypes = {
+	img: PropTypes.object,
+	title: PropTypes.string.isRequired,
+	subtitle: PropTypes.string.isRequired,
+	description: PropTypes.string.isRequired,
+	link: PropTypes.object,
+}
+
+export default TripCard

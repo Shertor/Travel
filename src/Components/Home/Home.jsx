@@ -1,4 +1,6 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
+
+import { NavLink } from 'react-router-dom'
 
 import gsap from 'gsap'
 // Import Swiper React components
@@ -15,7 +17,7 @@ import 'swiper/css/thumbs'
 import './Home.css'
 
 import turkey_2018 from './imgs/turkey_2018.jpg'
-import turkey_2020 from './imgs/turkey_2020.jpg'
+import turkey_2021 from './imgs/turkey_2021.jpg'
 
 import { EffectFade, Navigation, Thumbs } from 'swiper'
 
@@ -65,21 +67,21 @@ export default function Home() {
 					modules={[EffectFade, Navigation, Thumbs]}
 				>
 					<SwiperSlide className="trips">
-						<img src={turkey_2020} alt="" className="trips__bg" />
+						<img src={turkey_2021} alt="" className="trips__bg" />
 
 						<div className="trips__container bd-container">
 							<div className="trips__data">
 								<h2 className="trips__subtitle">Trips</h2>
-								<h1 className="trips__title">Fethiye 2020</h1>
+								<h1 className="trips__title">Fethiye 2021</h1>
 								<p className="trips__description">
 									Fethiye is a city and district of Muğla Province in the Aegean
 									Region of Turkey. It is one of the prominent tourist
 									destinations in the Turkish Riviera.
 								</p>
-								<a href="#" className="trips__button">
+								<NavLink to="/Explore" className="trips__button">
 									Explore{' '}
 									<i className="bx bx-right-arrow-alt trips__button-icon"></i>
-								</a>
+								</NavLink>
 							</div>
 
 							<div className="trips__trip">
@@ -105,10 +107,10 @@ export default function Home() {
 									19% of the population of Turkey. Istanbul is the most populous
 									European city, and the world's 15th-largest city.
 								</p>
-								<a href="#" className="trips__button">
+								<NavLink to="/Explore" className="trips__button">
 									Explore{' '}
 									<i className="bx bx-right-arrow-alt trips__button-icon"></i>
-								</a>
+								</NavLink>
 							</div>
 
 							<div className="trips__trip">
@@ -129,7 +131,7 @@ export default function Home() {
 						modules={[Navigation, Thumbs]}
 					>
 						<SwiperSlide onClick={scrollAnimation}>
-							<img src={turkey_2020} alt="" className="controls__img" />
+							<img src={turkey_2021} alt="" className="controls__img" />
 						</SwiperSlide>
 						<SwiperSlide onClick={scrollAnimation}>
 							<img src={turkey_2018} alt="" className="controls__img" />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Routes, Route, NavLink } from 'react-router-dom'
-import { HashLink } from 'react-router-hash-link'
+// import { HashLink } from 'react-router-hash-link'
 
 import './Navigation.css'
 
@@ -40,7 +40,7 @@ export default function Navigation() {
 				<nav className="nav bd-container">
 					<div className="header__blur"></div>
 					<div className="nav__content">
-						<a href="#" className="nav__logo">
+						<a href="/" className="nav__logo">
 							Travel
 						</a>
 

@@ -21,7 +21,8 @@
 
 	overflow: hidden;
 
-	cursor: pointer;
+    color: inherit;
+    font-family: inherit;
 }
 
 .tripcard__wrapper:hover {

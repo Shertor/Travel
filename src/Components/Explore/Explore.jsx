@@ -6,7 +6,7 @@ import Divider from '../Divider/Divider'
 import TripCard from '../TripCard/TripCard'
 
 import turkey_2018 from '../Home/imgs/turkey_2018.jpg'
-import turkey_2020 from '../Home/imgs/turkey_2020.jpg'
+import turkey_2021 from '../Home/imgs/turkey_2021.jpg'
 
 export default function Explore() {
 	return (
@@ -16,12 +16,20 @@ export default function Explore() {
 				<h3 className="explore__subtitle">Trips</h3>
 				<Divider />
 				<TripCard
-					img={turkey_2020}
+					title="Kemer"
+					subtitle="2022"
+					description="Kemer is a seaside resort and district of Antalya Province 
+					on the Mediterranean coast of Turkey, 43 km (27 mi) west of the city of 
+					Antalya, on the Turkish Riviera."
+				/>
+				<Divider />
+				<TripCard
+					img={turkey_2021}
 					title="Fethiye"
-					subtitle="2020"
-					description="Fethiye is a city and district of Muğla Province in the Aegean
-									Region of Turkey. It is one of the prominent tourist
-									destinations in the Turkish Riviera."
+					subtitle="2021"
+					description="Fethiye is a city and district of Muğla Province in the Aegean 
+					Region of Turkey. It is one of the prominent tourist 
+					destinations in the Turkish Riviera."
 				/>
 				<Divider />
 				<TripCard
