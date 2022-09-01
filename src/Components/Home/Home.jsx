@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { NavLink } from 'react-router-dom'
 
@@ -21,9 +21,40 @@ import turkey_2021 from './imgs/turkey_2021.jpg'
 
 import { EffectFade, Navigation, Thumbs } from 'swiper'
 
+function animate() {
+	gsap.from('.trips__subtitle', {
+		opacity: 0,
+		duration: 0.2,
+		delay: 0.2,
+		y: -20,
+	})
+	gsap.from('.trips__title', {
+		opacity: 0,
+		duration: 0.3,
+		delay: 0.3,
+		y: -20,
+	})
+	gsap.from('.trips__description', {
+		opacity: 0,
+		duration: 0.4,
+		delay: 0.4,
+		y: -20,
+	})
+	gsap.from('.trips__button', {
+		opacity: 0,
+		duration: 0.5,
+		delay: 0.5,
+		y: -20,
+	})
+}
+
 export default function Home() {
 	const [thumbsSwiper, setThumbsSwiper] = useState(null)
 	const [isAnimated, setIsAnimated] = useState(false)
+
+	useEffect(()=>{
+		animate()
+	}, [])
 
 	function scrollAnimation() {
 		if (!isAnimated) {
@@ -31,30 +62,8 @@ export default function Home() {
 			setTimeout(() => {
 				setIsAnimated(false)
 			}, 1000)
-			gsap.from('.trips__subtitle', {
-				opacity: 0,
-				duration: 0.2,
-				delay: 0.2,
-				y: -20,
-			})
-			gsap.from('.trips__title', {
-				opacity: 0,
-				duration: 0.3,
-				delay: 0.3,
-				y: -20,
-			})
-			gsap.from('.trips__description', {
-				opacity: 0,
-				duration: 0.4,
-				delay: 0.4,
-				y: -20,
-			})
-			gsap.from('.trips__button', {
-				opacity: 0,
-				duration: 0.5,
-				delay: 0.5,
-				y: -20,
-			})
+
+			animate()
 		}
 	}
 
