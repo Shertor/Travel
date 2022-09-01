@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/Travel/static/css/main.ccc2f160.css",
-    "main.js": "/Travel/static/js/main.977caf3f.js",
+    "main.css": "/Travel/static/css/main.c8b63039.css",
+    "main.js": "/Travel/static/js/main.d6ffdd2d.js",
     "static/js/787.8a220983.chunk.js": "/Travel/static/js/787.8a220983.chunk.js",
     "static/media/boxicons.svg": "/Travel/static/media/boxicons.0153fb5e5b5f697b4bcc.svg",
-    "static/media/turkey_2018.jpg": "/Travel/static/media/turkey_2018.29bbb241e08c5cf33607.jpg",
-    "static/media/turkey_2020.jpg": "/Travel/static/media/turkey_2020.a03a590f14eb06a2c4da.jpg",
+    "static/media/turkey_2018.jpg": "/Travel/static/media/turkey_2018.2ae9e7854cf8f072b38d.jpg",
     "static/media/boxicons.eot": "/Travel/static/media/boxicons.21f7c5dd64d88e1fc666.eot",
     "static/media/boxicons.woff": "/Travel/static/media/boxicons.02aa967c5bfb9489501a.woff",
     "static/media/boxicons.ttf": "/Travel/static/media/boxicons.ad0ddae357213656b3e6.ttf",
+    "static/media/turkey_2021.jpg": "/Travel/static/media/turkey_2021.ad0bda9d52a709451995.jpg",
     "static/media/boxicons.woff2": "/Travel/static/media/boxicons.0335b427967c56248ea6.woff2",
+    "static/media/stock.jpg": "/Travel/static/media/stock.e97ca749516c724e2bf7.jpg",
     "index.html": "/Travel/index.html",
-    "main.ccc2f160.css.map": "/Travel/static/css/main.ccc2f160.css.map",
-    "main.977caf3f.js.map": "/Travel/static/js/main.977caf3f.js.map",
+    "main.c8b63039.css.map": "/Travel/static/css/main.c8b63039.css.map",
+    "main.d6ffdd2d.js.map": "/Travel/static/js/main.d6ffdd2d.js.map",
     "787.8a220983.chunk.js.map": "/Travel/static/js/787.8a220983.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccc2f160.css",
-    "static/js/main.977caf3f.js"
+    "static/css/main.c8b63039.css",
+    "static/js/main.d6ffdd2d.js"
   ]
 }
