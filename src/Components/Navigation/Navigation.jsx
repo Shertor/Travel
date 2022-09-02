@@ -40,10 +40,10 @@ export default function Navigation() {
 
 				<nav className="nav bd-container">
 					<div className="header__blur"></div>
-					<div className="nav__content">
-						<a href="/" className="nav__logo">
+					<div className="nav__content" onClick={wrapperClick}>
+						<NavLink to="/" className="nav__logo">
 							Travel
-						</a>
+						</NavLink>
 
 						<div
 							className={toggleNav ? 'nav__menu show-menu' : 'nav__menu'}
@@ -51,17 +51,25 @@ export default function Navigation() {
 						>
 							<ul className="nav__list">
 								<li className="nav__item">
-									<NavLink to="/" className="nav__link" onClick={closeNav}>
-										Home
+									<NavLink
+										to="/"
+										className={({ isActive }) =>
+											isActive ? 'nav__link is-active' : 'nav__link'
+										}
+										onClick={closeNav}
+									>
+										<div>Home</div>
 									</NavLink>
 								</li>
 								<li className="nav__item">
 									<NavLink
 										to="/Explore"
-										className="nav__link"
+										className={({ isActive }) =>
+											isActive ? 'nav__link is-active' : 'nav__link'
+										}
 										onClick={closeNav}
 									>
-										Explore
+										<div>Explore</div>
 									</NavLink>
 								</li>
 								<li className="nav__item">
@@ -70,21 +78,35 @@ export default function Navigation() {
 										className="nav__link"
 										onClick={closeNav}
 									>
-										Destinations
-										<span className="coming-soon__info">soon!</span>
+										<div>
+											Destinations
+											<span className="coming-soon__info">soon!</span>
+										</div>
 									</div>
 								</li>
 								<li className="nav__item">
 									<div to="/Hotels" className="nav__link" onClick={closeNav}>
-										Hotels
-										<span className="coming-soon__info">soon!</span>
+										<div>
+											Hotels
+											<span className="coming-soon__info">soon!</span>
+										</div>
 									</div>
 								</li>
 							</ul>
 						</div>
 
-						<div className="nav__toggle" id="nav-toggle" onClick={openNav}>
-							<i className="bx bx-menu"></i>
+						<div
+							className="nav__toggle"
+							id="nav-toggle"
+							onClick={() => {
+								toggleNav ? closeNav() : openNav()
+							}}
+						>
+							{toggleNav ? (
+								<i class="bx bx-x"></i>
+							) : (
+								<i className="bx bx-menu"></i>
+							)}
 						</div>
 					</div>
 				</nav>
