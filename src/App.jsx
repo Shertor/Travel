@@ -6,11 +6,8 @@ import Navigation from './Components/Navigation/Navigation'
 import Footer from './Components/Footer/Footer'
 import Loader from './Components/Loader/Loader'
 
-import Context from './context'
-
 function App() {
 	const [loaded, setLoaded] = useState(false)
-	const [homeLoaded, setHomeLoaded] = useState(false)
 
 	useEffect(() => {
 		const onPageLoad = () => {
@@ -27,16 +24,15 @@ function App() {
 	}, [])
 
 	return loaded ? (
-		<Context.Provider value={{ homeLoaded, setHomeLoaded }}>
-			<div className="App">
-				<>
-					{homeLoaded?null:<Loader></Loader>}
-					<Navigation />
-					<Footer />
-				</>
-			</div>
-		</Context.Provider>
-	) : <Loader></Loader>
+		<div className="App">
+			<>
+				<Navigation />
+				<Footer />
+			</>
+		</div>
+	) : (
+		<Loader></Loader>
+	)
 }
 
 export default App
