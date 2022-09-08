@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Travel/static/css/main.eedfb86e.css",
-    "main.js": "/Travel/static/js/main.a42efe1d.js",
+    "main.css": "/Travel/static/css/main.62bed01f.css",
+    "main.js": "/Travel/static/js/main.e7458899.js",
     "static/js/787.8a220983.chunk.js": "/Travel/static/js/787.8a220983.chunk.js",
     "static/media/boxicons.svg": "/Travel/static/media/boxicons.0153fb5e5b5f697b4bcc.svg",
     "static/media/turkey_2018.jpg": "/Travel/static/media/turkey_2018.2ae9e7854cf8f072b38d.jpg",
@@ -12,13 +12,22 @@
     "static/media/turkey_2021.jpg": "/Travel/static/media/turkey_2021.ad0bda9d52a709451995.jpg",
     "static/media/boxicons.woff2": "/Travel/static/media/boxicons.0335b427967c56248ea6.woff2",
     "static/media/stock.jpg": "/Travel/static/media/stock.e97ca749516c724e2bf7.jpg",
+    "static/media/pxiEyp8kv8JHgFVrJJbecmNE.woff2": "/Travel/static/media/pxiEyp8kv8JHgFVrJJbecmNE.64d5f06ee726edd58ca3.woff2",
+    "static/media/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2": "/Travel/static/media/pxiByp8kv8JHgFVrLEj6Z11lFc-K.3343afa6b8c01e48a23b.woff2",
+    "static/media/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2": "/Travel/static/media/pxiByp8kv8JHgFVrLGT9Z11lFc-K.f43b6ebf46ee6fba0555.woff2",
+    "static/media/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2": "/Travel/static/media/pxiByp8kv8JHgFVrLEj6Z1xlFQ.91145014c0350c248ed2.woff2",
+    "static/media/pxiEyp8kv8JHgFVrJJfecg.woff2": "/Travel/static/media/pxiEyp8kv8JHgFVrJJfecg.405055dd680fa1dcdfa2.woff2",
+    "static/media/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2": "/Travel/static/media/pxiByp8kv8JHgFVrLGT9Z1xlFQ.08491d3f7fe7ae88ef44.woff2",
+    "static/media/pxiEyp8kv8JHgFVrJJnecmNE.woff2": "/Travel/static/media/pxiEyp8kv8JHgFVrJJnecmNE.4f38b4331448d2313adc.woff2",
+    "static/media/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2": "/Travel/static/media/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.d08f0891e438248ce419.woff2",
+    "static/media/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2": "/Travel/static/media/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.b59bcdf2f050e663ca29.woff2",
     "index.html": "/Travel/index.html",
-    "main.eedfb86e.css.map": "/Travel/static/css/main.eedfb86e.css.map",
-    "main.a42efe1d.js.map": "/Travel/static/js/main.a42efe1d.js.map",
+    "main.62bed01f.css.map": "/Travel/static/css/main.62bed01f.css.map",
+    "main.e7458899.js.map": "/Travel/static/js/main.e7458899.js.map",
     "787.8a220983.chunk.js.map": "/Travel/static/js/787.8a220983.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eedfb86e.css",
-    "static/js/main.a42efe1d.js"
+    "static/css/main.62bed01f.css",
+    "static/js/main.e7458899.js"
   ]
 }
