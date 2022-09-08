@@ -1,4 +1,30 @@
 /* ========== LOADER STYLES ========== */
+.loader-wrapper {
+	width: 100vw;
+	height: 100vh;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	row-gap: 1rem;
+
+	margin: 0;
+	z-index: 1001;
+}
+
+.lds-comment {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: var(--small-font-size);
+	color: var(--first-color);
+}
+
 .lds-spinner {
 	color: var(--first-color);
 	display: inline-block;

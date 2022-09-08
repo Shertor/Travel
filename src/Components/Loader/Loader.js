@@ -4,16 +4,7 @@ import './Loader.css'
 export default function Loader() {
 	return (
 		<React.Fragment>
-			<div
-				style={{
-					display: 'flex',
-					justifyContent: 'center',
-					margin: '0',
-					transform: 'scale(0.5)',
-					WebkitTransform: 'scale(0.5)',
-					transformOrigin: 'top center',
-				}}
-			>
+			<div className="loader-wrapper">
 				<div className="lds-spinner">
 					<div />
 					<div />
@@ -28,6 +19,7 @@ export default function Loader() {
 					<div />
 					<div />
 				</div>
+				<div className='lds-comment'>traveling through the world...</div>
 			</div>
 		</React.Fragment>
 	)

@@ -5,6 +5,7 @@
 
 .home {
 	position: relative;
+	min-height: 500px;
 	height: 100vh;
 	height: var(--app-height);
 }

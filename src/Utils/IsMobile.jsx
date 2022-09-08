@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function IsMobile() {
 	function Android() {
 		return navigator.userAgent.match(/Android/i)

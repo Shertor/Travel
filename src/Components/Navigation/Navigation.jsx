@@ -103,7 +103,7 @@ export default function Navigation() {
 							}}
 						>
 							{toggleNav ? (
-								<i class="bx bx-x"></i>
+								<i className="bx bx-x"></i>
 							) : (
 								<i className="bx bx-menu"></i>
 							)}
