@@ -26,6 +26,8 @@ import turkey_2022 from './imgs/turkey_2022.jpg'
 
 import Loader from '../Loader/Loader'
 
+import { loadImage } from '../../Utils/functions'
+
 function animate() {
 	gsap.from('.trips__subtitle', {
 		opacity: 0,
@@ -64,15 +66,6 @@ export default function Home() {
 	}
 
 	useEffect(() => {
-		const loadImage = (url) => {
-			return new Promise((resolve, reject) => {
-				const loadImg = new Image()
-				loadImg.src = url
-				loadImg.onload = () => resolve(url)
-
-				loadImg.onerror = (err) => reject(err)
-			})
-		}
 		Promise.all([
 			loadImage(turkey_2018),
 			loadImage(turkey_2021),
@@ -108,7 +101,7 @@ export default function Home() {
 
 	return (
 		<>
-			{homeLoaded?null:<Loader/>}
+			{homeLoaded ? null : <Loader />}
 			<div className="home">
 				<Swiper
 					effect={'fade'}

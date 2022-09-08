@@ -5,9 +5,9 @@ import './Explore.css'
 import Divider from '../Divider/Divider'
 import TripCard from '../TripCard/TripCard'
 
-import turkey_2018 from '../Home/imgs/turkey_2018.jpg'
-import turkey_2021 from '../Home/imgs/turkey_2021.jpg'
-import turkey_2022 from '../Home/imgs/turkey_2022.jpg'
+import turkey_2018 from '../Home/imgs/turkey_2018-min.jpg'
+import turkey_2021 from '../Home/imgs/turkey_2021-min.jpg'
+import turkey_2022 from '../Home/imgs/turkey_2022-min.jpg'
 
 export default function Explore() {
 	return (

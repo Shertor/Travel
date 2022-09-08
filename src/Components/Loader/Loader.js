@@ -19,7 +19,7 @@ export default function Loader() {
 					<div />
 					<div />
 				</div>
-				<div className='lds-comment'>traveling through the world...</div>
+				<div className="lds-comment">traveling through the world...</div>
 			</div>
 		</React.Fragment>
 	)
