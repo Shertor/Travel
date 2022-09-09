@@ -7,10 +7,23 @@ import './Navigation.css'
 
 import Home from '../Home/Home'
 import Explore from '../Explore/Explore'
+import ArticleTrip from '../ArticleTrip/ArticleTrip'
 // import NotFound from '../NotFound/NotFound'
 
 export default function Navigation() {
 	const [toggleNav, setToggleNav] = useState(false)
+
+	const trips = [
+		{
+			name: 'Fethiye',
+			date: 'August 2021',
+			subtitle: 'Sun and Sea',
+			img: './imgs/turkey_2022.jpg',
+			description:
+				'Fethiye is a city and district of Muğla Province in the Aegean Region of Turkey. It is one of the prominent tourist destinations in the Turkish Riviera.',
+			data: {},
+		},
+	]
 
 	function openNav() {
 		// const body = document.getElementById('body')
@@ -119,9 +132,14 @@ export default function Navigation() {
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 					<Route path="/Explore" element={<Explore />} />
-					<Route path="/Destinations" element={<Home />} />
-					<Route path="/Hotels" element={<Home />} />
 
+					{trips.map((article) => {
+						console.log(`/Explore/${article.name}`)
+						return <><Route
+							path={`/Explore/${article.name}`}
+							element={<ArticleTrip article={article} />}
+						></Route></>
+					})}
 					{/* 404 Page */}
 					{/* <Route path="*" element={<NotFound />} /> */}
 				</Routes>
