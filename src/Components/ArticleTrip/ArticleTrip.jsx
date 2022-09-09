@@ -8,5 +8,6 @@ export default function ArticleTrip({article}) {
         <div>{article.date}</div>
         <div>{article.subtitle}</div>
         <div>{article.description}</div>
+        <img src={article.img} alt="" />
     </div>)
 }

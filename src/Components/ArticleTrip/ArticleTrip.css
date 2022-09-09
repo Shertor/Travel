@@ -1,5 +1,11 @@
 .article-trip__wrapper{
-    min-height: 600px;
 
-    background-color: red;
+}
+
+.article-trip__wrapper img{
+    min-width: 500px;
+    min-height: 500px;
+
+    width: 500px;
+    height: 500px;
 }
