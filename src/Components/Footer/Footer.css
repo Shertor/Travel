@@ -17,18 +17,18 @@
 	gap: 2rem;
 }
 
-.footer *{
+.footer * {
 	white-space: nowrap;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
 	.footer {
 		justify-items: flex-start;
 		padding-left: 1.25rem;
 		grid-template-columns: 1fr 1fr;
 	}
 }
-@media screen and (max-width:425px) {
+@media screen and (max-width: 425px) {
 	.footer {
 		grid-template-columns: 1fr;
 	}
@@ -69,8 +69,85 @@
 	font-size: var(--normal-font-size);
 }
 
+.site-info__contacts-item {
+	position: relative;
+	display: flex;
+
+	width: fit-content;
+	height: fit-content;
+}
+
+.site-info__contacts-item svg {
+	fill: var(--text-color);
+}
+
+.site-info__contacts-item .site-info__contacts-item__tooltip {
+	position: absolute;
+	top: calc(100% + 4px);
+
+	left: 50%;
+
+	transform: translateX(-50%);
+
+	background-color: var(--title-color);
+	color: #fff;
+
+	padding: 5px 8px;
+
+	border-radius: 0.25rem;
+
+	z-index: var(--z-tooltip);
+
+	display: none;
+}
+
+.site-info__contacts-item .site-info__contacts-item__tooltip-arrow {
+	position: absolute;
+
+	top: calc(100% + 4px);
+
+	transform: translateY(-25%);
+
+	display: none;
+}
+
+.site-info__contacts-item .site-info__contacts-item__tooltip-arrow svg {
+	fill: var(--title-color);
+}
+
+.site-nav__item,
+.site-info__contacts-item,
+.projects__item {
+	border-radius: 0.25rem;
+}
+
 .site-nav__item:hover,
 .site-info__contacts-item:hover,
 .projects__item:hover {
 	color: var(--title-color);
+}
+
+.site-nav__item:focus-visible,
+.projects__item:focus-visible {
+	color: var(--title-color);
+	outline: 1px solid var(--title-color);
+	outline-offset: 2px;
+}
+
+.site-info__contacts-item:focus-visible {
+	outline: none;
+	/* outline-offset: 4px; */
+}
+
+.site-info__contacts-item:focus-visible svg,
+.site-info__contacts-item:hover svg {
+	fill: var(--title-color);
+}
+
+.site-info__contacts-item:focus-visible .site-info__contacts-item__tooltip,
+.site-info__contacts-item:hover .site-info__contacts-item__tooltip,
+.site-info__contacts-item:hover .site-info__contacts-item__tooltip-arrow,
+.site-info__contacts-item:focus-visible
+	.site-info__contacts-item__tooltip-arrow {
+	display: block;
 }

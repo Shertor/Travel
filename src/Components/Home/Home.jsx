@@ -113,16 +113,19 @@ export default function Home() {
 
 						<div className="trips__container bd-container">
 							<div className="trips__data">
-								<h2 className="trips__subtitle">Trips</h2>
-								<h1 className="trips__title">Kemer 2022</h1>
-								<p className="trips__description">
-									Kemer is a seaside resort and district of Antalya Province on
-									the Mediterranean coast of Turkey, 43 km (27 mi) west of the
-									city of Antalya, on the Turkish Riviera.
-								</p>
+								<h2 className="trips__subtitle">2022</h2>
+								<h1 className="trips__title">Kemer</h1>
+								<p className="trips__description">Rest full day</p>
 								<NavLink to="/Explore" className="trips__button">
 									Explore{' '}
-									<i className="bx bx-right-arrow-alt trips__button-icon"></i>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										className="trips__button-icon"
+									>
+										<path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+									</svg>
 								</NavLink>
 							</div>
 
@@ -139,13 +142,9 @@ export default function Home() {
 
 						<div className="trips__container bd-container">
 							<div className="trips__data">
-								<h2 className="trips__subtitle">Trips</h2>
-								<h1 className="trips__title">Fethiye 2021</h1>
-								<p className="trips__description">
-									Fethiye is a city and district of Muğla Province in the Aegean
-									Region of Turkey. It is one of the prominent tourist
-									destinations in the Turkish Riviera.
-								</p>
+								<h2 className="trips__subtitle">2021</h2>
+								<h1 className="trips__title">Fethiye</h1>
+								<p className="trips__description">Sun and Sea</p>
 								<NavLink to="/Explore" className="trips__button">
 									Explore{' '}
 									<i className="bx bx-right-arrow-alt trips__button-icon"></i>
@@ -165,16 +164,9 @@ export default function Home() {
 
 						<div className="trips__container bd-container">
 							<div className="trips__data">
-								<h2 className="trips__subtitle">Trips</h2>
-								<h1 className="trips__title">İstanbul 2018</h1>
-								<p className="trips__description">
-									İstanbul is the largest city in Turkey, serving as the
-									country's economic, cultural and historic hub. The city
-									straddles the Bosporus strait, lying in both Europe and Asia,
-									and has a population of over 15 million residents, comprising
-									19% of the population of Turkey. Istanbul is the most populous
-									European city, and the world's 15th-largest city.
-								</p>
+								<h2 className="trips__subtitle">2018</h2>
+								<h1 className="trips__title">İstanbul</h1>
+								<p className="trips__description">Center of the World</p>
 								<NavLink to="/Explore" className="trips__button">
 									Explore{' '}
 									<i className="bx bx-right-arrow-alt trips__button-icon"></i>

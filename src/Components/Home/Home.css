@@ -46,16 +46,20 @@
 }
 
 .trips__subtitle {
-	font-size: var(--big-font-size);
+	/* font-size: var(--big-font-size); */
 	font-weight: var(--font-medium);
 }
 
 .trips__title {
 	font-size: var(--biggest-font-size);
+	text-transform: capitalize;
 }
 
 .trips__description {
 	margin-bottom: 1rem;
+	font-size: var(--big-font-size);
+	font-weight: var(--font-medium);
+	text-transform: uppercase;
 }
 
 .trips__button {
@@ -63,18 +67,28 @@
 	align-items: center;
 	padding: 1rem 1.5rem;
 	background-color: var(--first-color-lighter);
-	color: var(--first-color);
+	color: var(--title-color);
 	border-radius: 0.5rem;
 	font-weight: var(--font-medium);
 }
 
 .trips__button:hover {
+	color: var(--first-color);
 	background-color: var(--body-color);
 }
 
 .trips__button-icon {
+	fill: var(--title-color);
+
 	font-size: 1.5rem;
 	margin-left: 0.5rem;
+
+	transition: 0.4s;
+}
+
+.trips__button:hover .trips__button-icon {
+	fill: var(--first-color);
+	transform: translateX(0.25rem);
 }
 
 .controls__img {

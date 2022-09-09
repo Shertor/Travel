@@ -93,6 +93,10 @@
 	align-items: center;
 }
 
+.nav__toggle svg{
+	fill: var(--title-color);
+}
+
 .nav__link {
 	position: relative;
 	display: flex;
@@ -106,6 +110,10 @@
 .nav__logo:hover,
 .nav__toggle:hover {
 	color: var(--first-color);
+}
+
+.nav__toggle:hover svg {
+	fill: var(--first-color);
 }
 
 .nav__link.is-active:hover div::before {
