@@ -64,7 +64,7 @@ TripCard.propTypes = {
 	title: PropTypes.string.isRequired,
 	subtitle: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
-	link: PropTypes.object,
+	link: PropTypes.string,
 }
 
 export default TripCard

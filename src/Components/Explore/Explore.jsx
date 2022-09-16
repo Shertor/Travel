@@ -20,6 +20,7 @@ export default function Explore() {
 					img={turkey_2022}
 					title="Kemer"
 					subtitle="2022"
+					link={`/Explore/Kemer_2022`}
 					description="Kemer is a seaside resort and district of Antalya Province 
 					on the Mediterranean coast of Turkey, 43 km (27 mi) west of the city of 
 					Antalya, on the Turkish Riviera."
@@ -29,6 +30,7 @@ export default function Explore() {
 					img={turkey_2021}
 					title="Fethiye"
 					subtitle="2021"
+					link={`/Explore/Fethiye_2021`}
 					description="Fethiye is a city and district of Muğla Province in the Aegean 
 					Region of Turkey. It is one of the prominent tourist 
 					destinations in the Turkish Riviera."
@@ -38,6 +40,7 @@ export default function Explore() {
 					img={turkey_2018}
 					title="İstanbul"
 					subtitle="2018"
+					link={`/Explore/Istanbul_2018`}
 					description="İstanbul is the largest city in Turkey, serving as the
 					country's economic, cultural and historic hub. The city
 					straddles the Bosporus strait, lying in both Europe and Asia,

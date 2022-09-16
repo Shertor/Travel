@@ -15,12 +15,33 @@ export default function Navigation() {
 
 	const trips = [
 		{
-			name: 'Fethiye',
-			date: 'August 2021',
-			subtitle: 'Sun and Sea',
+			name: 'Kemer_2022',
+			date: 'August 2022',
+			title: 'Kemer',
+			subtitle: 'Rest full day',
 			img: './imgs/turkey_2022.jpg',
 			description:
+				'Kemer is a seaside resort and district of Antalya Province on the Mediterranean coast of Turkey, 43 km (27 mi) west of the city of Antalya, on the Turkish Riviera.',
+			data: {},
+		},
+		{
+			name: 'Fethiye_2021',
+			date: 'August 2021',
+			title: 'Fethiye',
+			subtitle: 'Sun and Sea',
+			img: './imgs/turkey_2021.jpg',
+			description:
 				'Fethiye is a city and district of Muğla Province in the Aegean Region of Turkey. It is one of the prominent tourist destinations in the Turkish Riviera.',
+			data: {},
+		},
+		{
+			name: 'Istanbul_2018',
+			date: 'August 2018',
+			title: 'İstanbul',
+			subtitle: 'Center of the World',
+			img: './imgs/turkey_2018.jpg',
+			description:
+				"İstanbul is the largest city in Turkey, serving as the country's economic, cultural and historic hub. The city straddles the Bosporus strait, lying in both Europe and Asia, and has a population of over 15 million residents, comprising 19% of the population of Turkey. Istanbul is the most populous European city, and the world's 15th-largest city.",
 			data: {},
 		},
 	]
@@ -135,10 +156,13 @@ export default function Navigation() {
 
 					{trips.map((article) => {
 						console.log(`/Explore/${article.name}`)
-						return <><Route
-							path={`/Explore/${article.name}`}
-							element={<ArticleTrip article={article} />}
-						></Route></>
+						return (
+							<Route
+								key={article.name}
+								path={`/Explore/${article.name}`}
+								element={<ArticleTrip article={article} />}
+							></Route>
+						)
 					})}
 					{/* 404 Page */}
 					{/* <Route path="*" element={<NotFound />} /> */}
