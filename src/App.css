@@ -33,6 +33,12 @@
 	}
 }
 
+@media screen and (min-width: 1036px) {
+	.bd-container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 @media screen and (min-width: calc(1024px + 2rem)) {
 	.bd-container {
 		margin-left: auto;
