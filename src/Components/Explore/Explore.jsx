@@ -4,6 +4,7 @@ import './Explore.css'
 
 import Divider from '../Divider/Divider'
 import TripCard from '../TripCard/TripCard'
+import Map from '../Map/Map'
 
 import turkey_2018 from '../Home/imgs/turkey_2018-min.jpg'
 import turkey_2021 from '../Home/imgs/turkey_2021-min.jpg'
@@ -14,6 +15,11 @@ export default function Explore() {
 		<>
 			<div className="explore bd-container">
 				<h1 className="explore__title">Explore</h1>
+				<h3 className="explore__subtitle">Map</h3>
+				<div className="" style={{height: "400px", width: "100%"}}>
+					<Map/>
+				</div>
+				
 				<h3 className="explore__subtitle">Trips</h3>
 				<Divider />
 				<TripCard

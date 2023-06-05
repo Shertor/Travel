@@ -1,37 +1,52 @@
-import React, { useEffect, useState } from 'react'
-import './App.css'
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import "./leaflet.css"
+import Context from "./context";
 
-import Navigation from './Components/Navigation/Navigation'
-import Footer from './Components/Footer/Footer'
-import Loader from './Components/Loader/Loader'
+import Navigation from "./Components/Navigation/Navigation";
+import Footer from "./Components/Footer/Footer";
+import Loader from "./Components/Loader/Loader";
 
 function App() {
-	const [loaded, setLoaded] = useState(false)
+  const [allLoaded, setAllLoaded] = useState(false);
 
-	useEffect(() => {
-		const onPageLoad = () => {
-			setLoaded(true)
-		}
+  const [pageLoaded, setPageLoaded] = useState(true);
+  const [loaded, setLoaded] = useState(false);
 
-		if (document.readyState === 'complete') {
-			onPageLoad()
-		} else {
-			window.addEventListener('load', onPageLoad)
+  useEffect(() => {
+    const onPageLoad = () => {
+      setLoaded(true);
+    };
 
-			return () => window.removeEventListener('load', onPageLoad)
-		}
-	}, [])
+    if (document.readyState === "complete") {
+      onPageLoad();
+    } else {
+      window.addEventListener("load", onPageLoad);
 
-	return loaded ? (
-		<div className="App">
-			<>
-				<Navigation />
-				<Footer />
-			</>
-		</div>
-	) : (
-		<Loader></Loader>
-	)
+      return () => window.removeEventListener("load", onPageLoad);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (loaded && pageLoaded) {
+      setAllLoaded(true);
+      return;
+    }
+  }, [loaded, pageLoaded]);
+
+  return (
+    <>
+      <div className={allLoaded ? "App" : "App hidden"}>
+        <>
+          <Context.Provider value={{ pageLoaded, setPageLoaded }}>
+            <Navigation />
+            <Footer />
+          </Context.Provider>
+        </>
+      </div>
+      {allLoaded ? null : <Loader></Loader>}
+    </>
+  );
 }
 
-export default App
+export default App;
